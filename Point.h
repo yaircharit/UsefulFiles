@@ -27,10 +27,7 @@ private:
 
 public:
     Point(int a = 0, int b = 0) : x{a}, y{b} {}
-    int getX() const
-    {
-        return floor(x * 100) / 100;
-    }
+    int getX() const{ return x; }
     int getY() const { return y; }
     int distanceFrom(const Point &p) const;
 
